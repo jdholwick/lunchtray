@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.lunchtray.app-merged_res-49:/layout_fragment_side_menu.xml.flat",
-        "source": "com.example.lunchtray.app-main-51:/layout/fragment_side_menu.xml"
-    },
-    {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -24,6 +20,10 @@
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/layout/fragment_checkout.xml"
     },
     {
+        "merged": "com.example.lunchtray.app-merged_res-49:/layout_fragment_accompaniment_menu.xml.flat",
+        "source": "com.example.lunchtray.app-main-51:/layout/fragment_accompaniment_menu.xml"
+    },
+    {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-49:/layout_fragment_accompaniment_menu.xml.flat",
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/layout/fragment_accompaniment_menu.xml"
     },
@@ -34,10 +34,6 @@
     {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-49:/drawable_ic_launcher_foreground.xml.flat",
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.lunchtray.app-merged_res-49:/layout_fragment_entree_menu.xml.flat",
-        "source": "com.example.lunchtray.app-main-51:/layout/fragment_entree_menu.xml"
     },
     {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-49:/navigation_mobile_navigation.xml.flat",
