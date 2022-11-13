@@ -300,7 +300,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
 
 
 
-                    viewModel.setEntree("berries");
+                    viewModel.setAccompaniment("berries");
                 }
                 break;
             }
@@ -335,7 +335,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
 
 
 
-                    viewModel.setEntree("pickles");
+                    viewModel.setAccompaniment("pickles");
                 }
                 break;
             }
@@ -353,7 +353,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
 
 
 
-                    viewModel.setEntree("bread");
+                    viewModel.setAccompaniment("bread");
                 }
                 break;
             }
