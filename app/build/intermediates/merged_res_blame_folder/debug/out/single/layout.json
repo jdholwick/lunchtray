@@ -16,15 +16,15 @@
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/layout/fragment_accompaniment_menu.xml"
     },
     {
+        "merged": "com.example.lunchtray.app-mergeDebugResources-48:/layout/fragment_checkout.xml",
+        "source": "com.example.lunchtray.app-main-51:/layout/fragment_checkout.xml"
+    },
+    {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-mergeDebugResources-48:/layout/fragment_checkout.xml",
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/layout/fragment_checkout.xml"
     },
     {
         "merged": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-mergeDebugResources-48:/layout/fragment_entree_menu.xml",
         "source": "/Users/jeffholwick/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-51:/layout/fragment_entree_menu.xml"
-    },
-    {
-        "merged": "com.example.lunchtray.app-mergeDebugResources-48:/layout/fragment_accompaniment_menu.xml",
-        "source": "com.example.lunchtray.app-main-51:/layout/fragment_accompaniment_menu.xml"
     }
 ]
