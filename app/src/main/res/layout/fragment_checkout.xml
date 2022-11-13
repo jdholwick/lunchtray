@@ -63,7 +63,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/entree_selection"
-                android:text="@{@string/subtotal(viewModel.entree.price)}"/>
+                android:text="@{viewModel.entree.getFormattedPrice()}"/>
 
             <!-- TODO: display the side name based on the side selection -->
             <TextView
