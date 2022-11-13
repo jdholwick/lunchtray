@@ -63,6 +63,9 @@ class CheckoutFragment : Fragment() {
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
             // TODO: initialize the OrderViewModel and CheckoutFragment variables
+
+            // Assign the fragment
+            checkoutFragment = this@CheckoutFragment
         }
     }
 

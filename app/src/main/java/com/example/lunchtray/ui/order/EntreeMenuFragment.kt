@@ -21,6 +21,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.LifecycleOwner
 import com.example.lunchtray.databinding.FragmentEntreeMenuBinding
 import com.example.lunchtray.model.OrderViewModel
 
@@ -33,9 +34,11 @@ class EntreeMenuFragment : Fragment() {
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
     private var _binding: FragmentEntreeMenuBinding? = null
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
     // Use the 'by activityViewModels()' Kotlin property delegate from the fragment-ktx artifact
     private val sharedViewModel: OrderViewModel by activityViewModels()
 
@@ -58,6 +61,9 @@ class EntreeMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             // TODO: initialize the EntreeMenuFragment variables
+
+            // Assign the fragment
+            entreeMenuFragment = this@EntreeMenuFragment
         }
     }
 

@@ -63,7 +63,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/entree_selection"
-                android:tag="binding_2"                                   />
+                android:tag="binding_2"                               />
 
             <!-- TODO: display the side name based on the side selection -->
             <TextView
@@ -71,7 +71,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/entree_selection"
-                android:tag="binding_3"                        />
+                android:tag="binding_3"               />
 
             <!-- TODO: display the side price based on the side selection -->
             <TextView
@@ -79,7 +79,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/side_selection"
-                android:tag="binding_4"                                 />
+                android:tag="binding_4"                             />
 
             <!-- TODO: display the accompaniment name based on the accompaniment selection -->
             <TextView
@@ -87,6 +87,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/side_selection"
+                android:tag="binding_5"                       
                 tools:text="Mixed Berries" />
 
             <!-- TODO: display the accompaniment price based on the accompaniment selection -->
@@ -95,6 +96,7 @@
                 style="@style/Widget.LunchTray.TextView.CheckoutItem.Info"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/accompaniment_selection"
+                android:tag="binding_6"                                      
                 tools:text="$1.00"/>
 
             <View
@@ -111,6 +113,7 @@
                 style="@style/Widget.LunchTray.TextView.Subtotal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider"
+                android:tag="binding_7"                               
                 tools:text="Subtotal: $10.00"/>
 
             <!-- TODO: set the text to the current tax value from the view model -->

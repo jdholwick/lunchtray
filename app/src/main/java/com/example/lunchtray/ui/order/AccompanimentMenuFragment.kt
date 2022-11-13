@@ -59,6 +59,9 @@ class AccompanimentMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             // TODO: initialize the AccompanimentMenuFragment variables
+
+            // Assign the fragment
+            accompanimentMenuFragment = this@AccompanimentMenuFragment
         }
     }
 
