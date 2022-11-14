@@ -129,11 +129,11 @@
                 android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@{@string/total(viewModel.total)}"
                 android:textAllCaps="true"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tax"
-                android:text="@{@string/total(viewModel.total)}"
                 tools:text="Total: $10.73" />
 
             <!-- TODO: submit the order when clicked -->

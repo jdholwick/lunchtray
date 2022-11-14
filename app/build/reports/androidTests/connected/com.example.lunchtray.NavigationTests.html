@@ -28,13 +28,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.306s</div>
+<div class="counter">7.550s</div>
 <p>duration</p>
 </div>
 </td>
@@ -43,8 +43,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">77%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -54,84 +54,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="navigate_to_side_menu_from_entree_menu"></a>
-<h3 class="failures">navigate_to_side_menu_from_entree_menu</h3>
-<span class="code">
-<pre>androidx.test.espresso.PerformException: Error performing 'single click - At Coordinates: 798, 1388 and precision: 16, 16' on view 'Animations or transitions are enabled on the target device.
-For more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment
-
-view.getId() is &lt;2131231081/com.example.lunchtray:id/next_button&gt;'.
-at androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)
-at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:9)
-at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
-at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
-at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
-at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)
-at com.example.lunchtray.NavigationTests.navigate_to_side_menu_from_entree_menu(NavigationTests.kt:106)
-... 27 trimmed
-Caused by: java.lang.IllegalArgumentException: Navigation action/destination com.example.lunchtray:id/action_startOrderFragment_to_entreeMenuFragment cannot be found from the current destination NavDestination(com.example.lunchtray:id/entreeMenuFragment) label=fragment_entree_menu
-at androidx.navigation.NavController.navigate(NavController.kt:1536)
-at androidx.navigation.NavController.navigate(NavController.kt:1468)
-at androidx.navigation.NavController.navigate(NavController.kt:1450)
-at androidx.navigation.NavController.navigate(NavController.kt:1433)
-at com.example.lunchtray.ui.order.EntreeMenuFragment.goToNextScreen(EntreeMenuFragment.kt:77)
-at com.example.lunchtray.databinding.FragmentEntreeMenuBindingImpl._internalCallbackOnClick(FragmentEntreeMenuBindingImpl.java:330)
-at com.example.lunchtray.generated.callback.OnClickListener.onClick(OnClickListener.java:11)
-at android.view.View.performClick(View.java:7506)
-at android.view.View.performClickInternal(View.java:7483)
-at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
-at android.view.View$PerformClick.run(View.java:29335)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
-at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
-at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
-at androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:6)
-at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)
-at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)
-at androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)
-at androidx.test.espresso.action.Tap.access$100(Tap.java:1)
-at androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)
-at androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)
-at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)
-at androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)
-at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
-at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at android.os.Looper.loopOnce(Looper.java:201)
-at android.os.Looper.loop(Looper.java:288)
-at android.app.ActivityThread.main(ActivityThread.java:7898)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)</pre>
-</span>
-</div>
-<div class="test">
-<a name="navigate_to_start_order_from_checkout_via_submit"></a>
-<h3 class="failures">navigate_to_start_order_from_checkout_via_submit</h3>
-<span class="code">
-<pre>java.lang.AssertionError: expected:&lt;2131230857&gt; but was:&lt;2131231205&gt;
-at org.junit.Assert.fail(Assert.java:88)
-at org.junit.Assert.failNotEquals(Assert.java:834)
-at org.junit.Assert.assertEquals(Assert.java:118)
-at org.junit.Assert.assertEquals(Assert.java:144)
-at com.example.lunchtray.NavigationTests.navigate_to_start_order_from_checkout_via_submit(NavigationTests.kt:218)</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -142,46 +68,46 @@ at com.example.lunchtray.NavigationTests.navigate_to_start_order_from_checkout_v
 </thead>
 <tr>
 <td>navigate_to_accompaniment_menu_from_side_menu</td>
-<td class="success">passed (0.560s)</td>
+<td class="success">passed (0.576s)</td>
 </tr>
 <tr>
 <td>navigate_to_checkout_from_accompaniment_menu</td>
-<td class="success">passed (0.508s)</td>
+<td class="success">passed (0.573s)</td>
 </tr>
 <tr>
 <td>navigate_to_entree_menu_from_start_order</td>
-<td class="success">passed (0.506s)</td>
+<td class="success">passed (0.730s)</td>
 </tr>
 <tr>
 <td>navigate_to_side_menu_from_entree_menu</td>
-<td class="failures">failed (0.330s)</td>
+<td class="success">passed (1.149s)</td>
 </tr>
 <tr>
 <td>navigate_to_start_order_from_accompaniment_menu</td>
-<td class="success">passed (0.639s)</td>
+<td class="success">passed (0.509s)</td>
 </tr>
 <tr>
 <td>navigate_to_start_order_from_checkout</td>
-<td class="success">passed (1.138s)</td>
+<td class="success">passed (1.214s)</td>
 </tr>
 <tr>
 <td>navigate_to_start_order_from_checkout_via_submit</td>
-<td class="failures">failed (0.457s)</td>
+<td class="success">passed (1.012s)</td>
 </tr>
 <tr>
 <td>navigate_to_start_order_from_entree_menu</td>
-<td class="success">passed (0.614s)</td>
+<td class="success">passed (0.995s)</td>
 </tr>
 <tr>
 <td>navigate_to_start_order_from_side_menu</td>
-<td class="success">passed (0.554s)</td>
+<td class="success">passed (0.792s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.2</a> at Nov 13, 2022, 3:01:25 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at Nov 13, 2022, 5:00:18 PM</p>
 </div>
 </div>
 </body>
